@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c1f2af85-a3aa-4af6-b4b2-5b6d5b6cf4c2&lang=ru_RU"
+    type="text/javascript">
+    </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- range.slider -->
+  <!--Plugin CSS file with desired skin-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!--Plugin JavaScript file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <!-- range.slider -->
+
+</head>
+
+<body>
+  <header>
+    <div class="header-content  navbar bg-light">
+      <div class="container">
+        <div class="row">
+
+          <div class="col">
+            <div class="navbar-brand">Начало</div>
+          </div>
+          <div class="col">
+            <div class="navbar-brand">Цепочки клиент-исполнитель</div>
+          </div>
+          <div class="col">
+            <div class="navbar-brand">О сайте</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="slide1">
+        <div class="row">
+          <div class="col text_iimg">
+            <div class="text-left">
+              <h4>Вам нужна услуга ?</h4>
+              <p>С помощью данного сервиса, вы сможете без проблем подобрать для себя исполнителей по выгодной ВАМ цене!
+              </p>
+            </div>
+          </div>
+          <div class="col-4 iimg">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-xs-3 col-md-4">
+                </div>
+                <div class="col-xs-3 col-md-4">
+                </div>
+                <div class="col-xs-3 col-md-4">
+                  <div class="rellax" data-rellax-speed="4">
+                    <div class="alert alert-danger">
+                      Выберите лучшую стоимость
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-3 col-md-4">
+                </div>
+                <div class="col-xs-3 col-md-4">
+                  <div class="rellax" data-rellax-speed="3">
+                    <div class="alert alert-success">
+                      Удобное время
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-4">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-3 col-md-4">
+                  <div class="rellax" data-rellax-speed="2">
+                    <div class="alert alert-warning">
+                      Ближайшее место
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-4">
+                </div>
+                <div class="col-xs-3 col-md-4">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slide2">
+        <div class="container sl-content">
+          <div class="row">
+            <div class="col-md-4 col-xs-3">
+              <div class="slide2-card">
+
+                <div class="rellax" data-rellax-speed="4">
+                  <div class="card-group">
+                    <img src="/src/img/library.png" class="card-img-top" alt="...">
+                    <div class="card border-primary mb-3" style="max-width: 18rem;">
+                      <!-- <div class="card-header">Выбор</div> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Выберите интересующую вас услугу</h5>
+                        <p class="card-text">Всё что вам нужно, будь-то нанять мастера по дому, записаться на маникюрчик
+                          или провести онлайн-собеседование, всё что угодно ВЫ можете сделать с нами! Просто выберите
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-3">
+              <div class="slide2-card">
+
+                <div class="rellax" data-rellax-speed="3">
+                  <div class="card-group">
+                    <img src="/src/img/library.png" class="card-img-top" alt="...">
+                    <div class="card border-danger mb-3" style="max-width: 18rem;">
+                      <!-- <div class="card-header">Header</div> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Установите финансовое ограничение</h5>
+                        <p class="card-text text-primary">Чтобы выбрать наилучших исполниетелей под вашу услугу,
+                          установите ограничение на стоимость. От неёё будет происходить расчёт по всем звеньям
+                          исполнителей.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-3">
+              <div class="slide2-card">
+
+                <div class="rellax" data-rellax-speed="2">
+                  <div class="card-group">
+                    <img src="/src/img/library.png" class="card-img-top" alt="...">
+                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                      <!-- <div class="card-header">Header</div> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Укажите местоположение</h5>
+                        <p class="card-text">Поставьте фильтр на определенное место на карте. Это поспособствует, поиску
+                          исполнителей и сократит время выполнения вашей услуги, а может быть и стоимость!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 col-xs-3">
+              <div class="slide2-card">
+
+                <div class="rellax" data-rellax-speed="4">
+                  <div class="card-group">
+                    <img src="/src/img/library.png" class="card-img-top" alt="...">
+                    <div class="card border-primary mb-3" style="max-width: 18rem;">
+                      <!-- <div class="card-header">Header</div> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Выберите дату и время выполнения вашего заказа</h5>
+                        <p class="card-text">Установите дату и/или время выполнения вашей услуги. Быть может, вы хотите
+                          установить её на следующий день или неделю ?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-3">
+              <div class="slide2-card">
+
+                <div class="rellax" data-rellax-speed="3">
+                  <div class="card-group">
+                    <img src="/src/img/library.png" class="card-img-top" alt="...">
+                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                      <!-- <div class="card-header">Header</div> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Выберите самый наилучший вариант</h5>
+                        <p class="card-text">Программа расчитает варианты исполнения вашей услуги и подберет несколько
+                          цепочек исполнителей -- вам остаётся лишь выбрать.>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-3">
+              <div class="slide2-card">
+
+                <div class="rellax" data-rellax-speed="2">
+                  <div class="card-group">
+                    <img src="/src/img/library.png" class="card-img-top" alt="...">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                      <!-- <div class="card-header">Header</div> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Primary card title</h5>
+
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="slide3">
+
+        <!-- <h3>Заполните заявку на выполнение услуги</h3> -->
+
+        <div class="slide3-content-form-service">
+
+          <h3 class="profile-section-name">Заполните заявку</h3>
+          <!--<form class="adsForm" id="AdsFormId">-->
+          <fieldset>
+            <legend class="form" id="contact">Общая информация об услуге</legend>
+            <div class="main_content_form">
+              <div class="field">
+                <label for="n">Мне нужно выполнить следующее</label>
+                <input class="form-input-slide3" type="text" name="firstname" id="suggest" placeholder="Например посидеть с ребёнком или выполнить письменную работу">
+                <span class="form_span_text">Выбор услуги позволит исполнителям выбрать вас</span>
+              </div>
+              <br>
+              <div class="field">
+                <div class="row_content_form">
+
+                  <div class="col span1" style="margin-right: 40px;">
+                    <label>Вид услуги</label>
+                    <select class="browser-default" style="width: 300px;">
+                      <option value="" disabled selected>Выберите основную категорию услуги</option>
+                      <option value="1">Курьерские услуги</option>
+                      <option value="1">Ремонт и строительство</option>
+                      <option value="1">Грузоперевозки</option>
+                      <option value="2">Виртуальный помощник</option>
+                      <option value="3">Репетиторство и обучение</option>
+                      <option value="3">Фото- и видеоуслуги</option>
+                      <option value="3">Установка и ремонт техники</option>
+                      <option value="3">Сборка и подключение аппарутары</option>
+                      <option value="3">Сборка и подключение аппарутары</option>
+                    </select>
+                  </div>
+                  <div class="col span2">
+                    <label>Подробнее</label>
+                    <select class="browser-default" style="width: 340px;">
+                      <option value="" disabled selected>Выберите дополнительную категорию услуги</option>
+                      <option value="1">Услуги пешего курьера</option>
+                      <option value="1">Услуги курьера на легковом авто</option>
+                      <option value="1">Купить и доставить</option>
+                      <option value="2">Срочная доставка</option>
+                      <option value="3">Доставка продуктов</option>
+                      <option value="3">Курьер на день</option>
+                      <option value="3">Другая посылка</option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+              <br><br><br><br>
+              <div class="field">
+                <label for="n" style="width: auto!important;">Опишите пожелания и детали, чтобы исполнители смогли лучше
+                  оценить вашу задачу</label><br>
+                <textarea
+                  placeholder="Например: развезти 10 небольших пакетов по 5 адресам. Общий вес — не более 7 кг. Желательно успеть доставить все пакеты за один день."></textarea>
+              </div>
+              <!-- <button id="button"">Показать место на карте</button> -->
+            </div>
+          </fieldset><br>
+
+          <!-- <div class=" placeMap">
+            </div> -->
+
+          <fieldset>
+            <legend class="form" id="contact">Параметры выполнения услуги</legend>
+            <div class="main_content_form">
+
+              <div class="field" style="width: 800px;">
+                <div class="bile-field input-field">
+                  <label for="n" style="width: auto">Наличие фото помогает исполнителям оценить вашу задачу и
+                    сформулировать свое предложение</label>
+                  <br><br>
+                  <div class="btn">
+                    <span>File</span>
+                    <input type="file" multiple>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="row_content_form">
+                  <div class="col span1" style="text-align: left; margin-right: 40px;">
+                    <label for="n">Начать</label>
+                    <br>
+                    <div class="date_class">
+                      <br>
+                      <div class="input-field">
+                        <i class="material-icons prefix">
+                          <img src="https://img.icons8.com/ios/40/000000/calendar.png" />
+                        </i>
+                        <input id="icon_prefix" type="date" name="calendar" class="validate" value="дд.мм.гггг"
+                          placeholder="дд.мм.гггг">
+                        <label for="icon_prefix">Дата</label>
+                      </div>
+                      <div class="input-field">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Время</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col span2" style="text-align: left;">
+                    <label for="n">Завершить</label>
+                    <br>
+                    <div class="date_class">
+                      <div class="input-field">
+                        <i class="material-icons prefix">
+                          <img src="https://img.icons8.com/ios/40/000000/calendar.png" />
+                        </i>
+                        <label for="n">Дата</label>
+                        <br>
+                        <input id="icon_prefix" type="date" name="calendar" class="validate" value="дд.мм.гггг"
+                          placeholder="дд.мм.гггг">
+                      </div>
+                      <div class="input-field">
+                        <input id="last_name2" type="text" class="validate">
+                        <label for="last_name2">Время</label>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- <div class="field" style="width: 300px;">
+                <label>Право собственности</label>
+                <select class="browser-default" style="width: 300px;">
+                  <option value="" disabled selected>Выберите подходящий вариант</option>
+                  <option value="1">Собственник</option>
+                  <option value="2">Посредник</option>
+                  <option value="3">Подселение</option>
+                </select>
+              </div>
+              <br>
+              <div class="field">
+                <label for="n">Телефон</label>
+                <input type="tel" name="firstname" placeholder="+7 (xxx) xxx-xxxx">
+                <span class="form_span_text">По телефону с вами смогут связаться</span>
+              </div><br> -->
+
+            </div>
+          </fieldset><br>
+
+          <fieldset>
+            <legend class="form" id="contact">Бюджет</legend>
+            <div class="main_content_form">
+              <div class="field">
+                <label for="n">На какой бюджет вы рассчитываете ?</label>
+                <br>
+                <div class="price-selector">
+                  <input type="text" class="js-range-slider" name="my_range" value="" />
+                </div>
+              </div>
+              <br>
+              <div class="field" style="text-align: left;">
+                <div class="row_content_form">
+                  <div class="col span1" style="margin-top: 10px; width:auto;">Или укажите цену в &#8381 :</div>
+                  <div class="col span2">
+                    <div class="inp-price">
+                      <input type="number">
+                    </div>
+                  </div>
+                </div>
+              </div
+            </div>
+          </fieldset>
+
+          <div class="field" style="text-align: left; margin: 20px 15px!important;">
+            <a class="waves-effect waves-light btn-large">Опубликовать объявление</a>
+          </div>
+
+        </div>
+
+        <div class="slide3-content-result-form">
+          
+        </div>
+
+        <div class="row justify-content-md-center">
+
+          <div class="col-md-auto">
+
+            <div class="input-group md-3 show">
+              <div class="input-group-prepend">
+                <label class="input-group-text bg-primary choiseSelect" for="inputGroupSelect01">Выберите услугу
+                </label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option value="0" selected>Услуга 0</option>
+                <option value="1">Услуга 1</option>
+                <option value="2">Услуга 2</option>
+                <option value="3">Услуга 3</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row justify-content-center">
+
+          <div class="col">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action" id="list-group-item1" data-toggle="list"
+                  href="#list-home" role="tab" aria-controls="home">Копицентр на Доватора</a>
+                <a class="list-group-item list-group-item-action active" id="list-group-item2" data-toggle="list"
+                  href="#list-profile" role="tab" aria-controls="profile">Копицентр на Ленина</a>
+                <a class="list-group-item list-group-item-action" id="list-group-item3" data-toggle="list"
+                  href="#list-messages" role="tab" aria-controls="messages">Копицентр на Комсомолова</a>
+                <a class="list-group-item list-group-item-action" id="list-group-item4" data-toggle="list"
+                  href="#list-settings" role="tab" aria-controls="settings">Копицентр на Энгельса</a>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  Услуга стоит 30р</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Услуга
+                  стоит 40р</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                  Услуга стоит 60р</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                  Услуга стоит 70р</div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col">
+
+            <!-- <div class="row"> -->
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action " id="list-home-list" data-toggle="list"
+                  href="#list-home" role="tab" aria-controls="home">Копицентр на Доватора</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile" role="tab" aria-controls="profile">Копицентр на Ленина</a>
+                <a class="list-group-item list-group-item-action active" id="list-messages-list" data-toggle="list"
+                  href="#list-messages" role="tab" aria-controls="messages">Копицентр на Комсомолова</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                  href="#list-settings" role="tab" aria-controls="settings">Копицентр на Энгельса</a>
+              </div>
+            </div>
+            <!-- </div> -->
+
+          </div>
+
+          <div class="col">
+
+            <!-- <div class="row"> -->
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                  href="#list-home" role="tab" aria-controls="home">Копицентр на Доватора</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile" role="tab" aria-controls="profile">Копицентр на Ленина</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                  href="#list-messages" role="tab" aria-controls="messages">Копицентр на Комсомолова</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                  href="#list-settings" role="tab" aria-controls="settings">Копицентр на Энгельса</a>
+              </div>
+            </div>
+            <!-- </div> -->
+
+          </div>
+
+          <div class="col">
+
+            <!-- <div class="row"> -->
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                  href="#list-home" role="tab" aria-controls="home">Копицентр на Доватора</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile" role="tab" aria-controls="profile">Копицентр на Ленина</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                  href="#list-messages" role="tab" aria-controls="messages">Копицентр на Комсомолова</a>
+                <a class="list-group-item list-group-item-action active" id="list-settings-list" data-toggle="list"
+                  href="#list-settings" role="tab" aria-controls="settings">Копицентр на Энгельса</a>
+              </div>
+            </div>
+            <!-- </div> -->
+
+          </div>
+
+        </div>
+
+        <div class="row justify-content-md-center">
+
+          <div class="col-md-auto">
+            <div id="map" style="width: 500px; height: 500px;"></div>
+            <script type="text/javascript">
+              // Функция ymaps.ready() будет вызвана, когда
+              // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+              ymaps.ready(init);
+              function init() {
+                // Создание карты.
+                var myMap = new ymaps.Map("map", {
+                  // Координаты центра карты.
+                  // Порядок по умолчанию: «широта, долгота».
+                  // Чтобы не определять координаты центра карты вручную,
+                  // воспользуйтесь инструментом Определение координат.
+                  center: [55.15, 61.39],
+                  // Уровень масштабирования. Допустимые значения:
+                  // от 0 (весь мир) до 19.
+                  zoom: 11
+                });
+              }
+              var marks = [500, 750, 1000, 1500, 5000];
+              var min = 0;
+              var max = 10000;
+              $(".js-range-slider").ionRangeSlider({
+                skin: "round",
+                grid: true,
+                min: 0,
+                max: 10000,
+                from: 5000,
+                step: 100,
+                max_postfix: "+",
+                prefix: "₽",
+                // onStart: function (data) {
+                //   addMarks(data.slider);
+                // }
+                // postfix: " €/ ₽",
+              });
+            </script>
+          </div>
+
+        </div>
+
+        <div class="text_price">Итог: <p class="price" id="priceNum">15000</p> рублей</div>
+
+      </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-left">
+        <div class="about">
+          <h3>О нас</h3>
+          <p>Данный сайт (портал, интернет ресурс) носит исключительно учебно-информационный характер в целях
+            прохождения
+            учебного процесса по дисциплине web-дизайн. Разработчиками являются студентя
+            ЮУрГУ
+            группы ЕТ-414 Сатонин Владислав Юрьевич.</p>
+        </div>
+        <div class="quick">
+          <h3>Быстрые ссылки</h3>
+          <ul class="quick-links">
+            <li><a href="https://www.susu.ru/ru" target="_blank">ЮУрГУ</a></li>
+          </ul>
+        </div>
+        <div class="copy">
+          <!-- <copy> -->Copyright Сатонин Цепочки 🏠 © 2020
+          <!-- </copy> -->
+        </div>
+        <div class="ucoz-copy">vsatonin</div>
+      </div>
+      <div class="footer-right">
+        <div class="adress">
+          <h3>Адрес ЮУрГУ</h3>
+          <p>Россия, 454080 Челябинск, проспект Ленина, 76</p>
+        </div>
+        <div class="contacts">
+          <h3>Телефон ЮУрГУ</h3>
+          <span class="phone"><span>+7 (351) 267-99-00</span></span>
+        </div>
+        <div class="soc-block">
+          <h3>Разработчики</h3>
+          <ul class="soc-link">
+            <li><a href="https://vk.com/x102am" target="_blank" class="fa fa-vk">ВК</a></li>
+            <!--<li><a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a></li>-->
+            <!--<li><a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a></li>-->
+            <li><a href="https://www.instagram.com/rtisheve/" target="_blank" class="fa fa-instagram">Инстаграм</a></li>
+            <!--<li><a href="https://ok.ru/" target="_blank" class="fa fa-odnoklassniki"></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
