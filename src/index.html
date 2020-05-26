@@ -25,6 +25,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <!-- range.slider -->
 
+  <script>
+    var clickButtonResult = false;
+    function getRandomIntA_B(A, B) {
+      return Math.floor(Math.random() * (B - A)) + A;
+    }
+    function appendToResult() {
+      $('#dop').append("<div class='field1'><fieldset><legend class='form' id='contact'>Зуева Оксана Виталиевна</legend><div class='row_content-form'><div class='col span1' style='width: auto'><img class='slide3_avatar' src='/src/img/image1.jpg'> </div><div class='col span2' style='margin: 0px 15px; width: 800px;'><div class='raiting'> <h5>На сайте " + getRandomIntA_B(2, 8) + " года</h5><img src='https://img.icons8.com/bubbles/40/000000/checked-2.png' /><img src='https://img.icons8.com/bubbles/40/000000/1-circle-c.png' /><img src='https://img.icons8.com/bubbles/40/000000/certificate.png' /></div><div class='star'><i>" + getRandomIntA_B(5, 100) + " Отзывов</i><br><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /></div>Здравствуйте! Готов предложить вам свои услуги. Имею большой опыт в данной категории услуг. Много выполненных заказов, смотрите отзывы. Буду рад с вами поработать!</div></div></fieldset></div>");
+
+      $('#dop').append("<div class='field1'><fieldset><legend class='form' id='contact'>Гусев Артём Богданович</legend><div class='row_content-form'><div class='col span1' style='width: auto'><img class='slide3_avatar' src='/src/img/image2.jpg'> </div><div class='col span2' style='margin: 0px 15px; width: 800px;'><div class='raiting'> <h5>На сайте " + getRandomIntA_B(2, 8) + " года</h5><img src='https://img.icons8.com/bubbles/40/000000/checked-2.png' /><img src='https://img.icons8.com/bubbles/40/000000/1-circle-c.png' /><img src='https://img.icons8.com/bubbles/40/000000/certificate.png' /></div><div class='star'><i>" + getRandomIntA_B(5, 100) + " Отзывов</i><br><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /></div>Здравствуйте! Готов предложить вам свои услуги. Имею большой опыт в данной категории услуг. Много выполненных заказов, смотрите отзывы. Буду рад с вами поработать!</div></div></fieldset></div>");
+
+      $('#dop').append("<div class='field1'><fieldset><legend class='form' id='contact'>Костина Тамара Леонидовна</legend><div class='row_content-form'><div class='col span1' style='width: auto'><img class='slide3_avatar' src='/src/img/image3.jpg'> </div><div class='col span2' style='margin: 0px 15px; width: 800px;'><div class='raiting'> <h5>На сайте " + getRandomIntA_B(2, 8) + " года</h5><img src='https://img.icons8.com/bubbles/40/000000/checked-2.png' /><img src='https://img.icons8.com/bubbles/40/000000/1-circle-c.png' /><img src='https://img.icons8.com/bubbles/40/000000/certificate.png' /></div><div class='star'><i>" + getRandomIntA_B(5, 100) + " Отзывов</i><br><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /><img src='https://img.icons8.com/bubbles/30/000000/filled-star.png' /></div>Здравствуйте! Готов предложить вам свои услуги. Имею большой опыт в данной категории услуг. Много выполненных заказов, смотрите отзывы. Буду рад с вами поработать!</div></div></fieldset></div>");
+    }
+    function deleteAppendResult() {
+      $('#dop').empty();
+    }
+  </script>
+
 </head>
 
 <body>
@@ -252,7 +269,8 @@
             <div class="main_content_form">
               <div class="field">
                 <label for="n">Мне нужно выполнить следующее</label>
-                <input class="form-input-slide3" type="text" name="firstname" id="suggest" placeholder="Например посидеть с ребёнком или выполнить письменную работу">
+                <input class="form-input-slide3" type="text" name="firstname" id="suggest"
+                  placeholder="Например посидеть с ребёнком или выполнить письменную работу">
                 <span class="form_span_text">Выбор услуги позволит исполнителям выбрать вас</span>
               </div>
               <br>
@@ -405,8 +423,7 @@
                     </div>
                   </div>
                 </div>
-              </div
-            </div>
+              </div </div>
           </fieldset>
 
           <div class="field" style="text-align: left; margin: 20px 15px!important;">
@@ -416,8 +433,122 @@
         </div>
 
         <div class="slide3-content-result-form">
-          
+          <fieldset>
+            <legend class="form" id="contact">Цепочка из 4-х пользователей</legend>
+            <div class="main-content-form">
+              <div class="field1">
+                <fieldset>
+                  <legend class="form" id="contact">Николаев Степан Иванович</legend>
+
+                  <div class="row_content-form">
+                    <div class="col span1" style="width: auto">
+                      <img class="slide3_avatar" src="/src/img/image.jpg">
+                    </div>
+                    <div class="col span2" style="margin: 0px 15px; width: 800px;">
+                      <div class="raiting">
+                        <h5>На сайте уже 5 лет</h5>
+                        <img src="https://img.icons8.com/bubbles/40/000000/checked-2.png" />
+                        <img src="https://img.icons8.com/bubbles/40/000000/1-circle-c.png" />
+                        <img src="https://img.icons8.com/bubbles/40/000000/certificate.png" />
+                      </div>
+                      <div class="star">
+                        <i>305 Отзывов</i>
+                        <br>
+                        <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" />
+                        <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" />
+                        <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" />
+                        <!-- <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" />
+                      <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" /> -->
+                      </div>
+                      Здравствуйте! Готов предложить вам свои услуги. Имею большой опыт в данной категории услуг. Много
+                      выполненных заказов, смотрите отзывы. Буду рад с вами поработать!
+                    </div>
+                  </div>
+                </fieldset>
+
+              </div>
+
+              <div class="dop_content_result" id="dop"></div>
+              <div class="field1">
+
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle" id="2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Развернуть
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="form" id="contact">Цепочка из 4-х пользователей</legend>
+            <div class="main-content-form">
+              <div class="field1">
+                <fieldset>
+                  <legend class="form" id="contact">Николаев Степан Иванович</legend>
+
+                  <div class="row_content-form">
+                    <div class="col span1" style="width: auto">
+                      <img class="slide3_avatar" src="/src/img/image.jpg">
+                    </div>
+                    <div class="col span2" style="margin: 0px 15px; width: 800px;">
+                      <div class="raiting">
+                        <h5>На сайте уже 5 лет</h5>
+                        <img src="https://img.icons8.com/bubbles/40/000000/checked-2.png" />
+                        <img src="https://img.icons8.com/bubbles/40/000000/1-circle-c.png" />
+                        <img src="https://img.icons8.com/bubbles/40/000000/certificate.png" />
+                      </div>
+                      <div class="star">
+                        <i>305 Отзывов</i>
+                        <br>
+                        <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" />
+                        <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" />
+                        <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" />
+                        <!-- <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" />
+                      <img src="https://img.icons8.com/bubbles/30/000000/filled-star.png" /> -->
+                      </div>
+                      Здравствуйте! Готов предложить вам свои услуги. Имею большой опыт в данной категории услуг. Много
+                      выполненных заказов, смотрите отзывы. Буду рад с вами поработать!
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="dop_content_result" id="dop"></div>
+              <div class="field1">
+
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle btn_result" id="1" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Развернуть
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </fieldset>
+
         </div>
+
+        <script>
+          $('.btn_result').click(function () {
+            console.log(target);
+            if (clickButtonResult) {
+              deleteAppendResult();
+              clickButtonResult = false;
+              $('btn_result').html('Развернуть');
+              $('.btn-group').removeClass('dropup');
+            } else {
+              appendToResult();
+              clickButtonResult = true;
+              $('btn_result').html('Свернуть');
+              $('.btn-group').addClass('dropup');
+            }
+          })
+          
+        </script>
 
         <div class="row justify-content-md-center">
 
